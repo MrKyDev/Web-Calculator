@@ -1,0 +1,104 @@
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between calculator and footer */
+    align-items: center; /* Center items horizontally */
+    background: url(../img/back.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #0c0c0cfd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set a maximum width for the calculator */
+    width: 100%; /* Allow it to be responsive */
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #000; /* Use a solid color for visibility */
+    text-align: center;
+    width: 100%; /* Full width to match the container */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.share h3 {
+    font-size: 2rem; /* Adjusted size for better fit */
+    color: #eee;
+}
+
+.footer .share {
+    padding: 1rem 0; /* Padding for spacing */
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#ffffff;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0; /* Padding for spacing */
+}
+
+.footer .links a {
+    padding:.7rem 2rem;
+    color:#fff;
+    font-size: 1.5rem; /* Adjusted size for better fit */
+}
+
+.footer .links a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .credit {
+   font-size: 1.5rem; /* Adjusted size for better fit */
+   color:#fff;
+   font-weight: lighter;
+   padding:.5rem; /* Reduced padding for better fit */
+}
